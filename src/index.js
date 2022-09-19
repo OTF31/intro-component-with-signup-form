@@ -1,22 +1,34 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
+import { createRoot } from "react-dom/client";
 import { NativeBaseProvider, extendTheme } from "native-base";
+
+import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 const theme = extendTheme({
+  colors: {
+    Red: `hsl(0, 100%, 74%)`,
+    Green: `hsl(154, 59%, 51%)`,
+    Blue: `hsl(248, 32%, 49%)`,
+    DarkBlue: `hsl(249, 10%, 26%)`,
+    GrayishBlue: `hsl(246, 25%, 77%)`,
+  },
   config: {
-    initialColorMode: "dark",
+    initialColorMode: "light",
+  },
+  fonts: {
+    heading: "Poppins",
+    body: "Poppins",
+    mono: "Poppins",
   },
 });
 
-ReactDOM.render(
+createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <NativeBaseProvider theme={theme}>
       <App />
     </NativeBaseProvider>
   </React.StrictMode>,
-  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
