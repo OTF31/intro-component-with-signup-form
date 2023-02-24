@@ -4,6 +4,6 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 
 ---
 
-[See in Github Pages](https://denisomarcuyottito.github.io/intro-component-with-signup-form/)
+[See in Github Pages](https://OTF31.github.io/intro-component-with-signup-form/)
 
 ![image](https://user-images.githubusercontent.com/75378049/191324097-a827e47c-5617-491a-989b-be418f6f5c01.png)
